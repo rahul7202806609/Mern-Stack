@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend align="center">Job Application Form</legend>
+            <form action="#" method="post">
+
+                <strong><label for="name">Name:</label></strong><br>
+                <input type="text" class="textfields" placeholder="First Name" required>
+                <input type="text" class="textfields" placeholder="Last Name" required><br>
+
+                <div class="contact-row">
+                        <strong><label for="email">E-mail:</label></strong><br>
+                        <input type="email" class="textfields" placeholder="ex: abc@gmail.com" required><br>
+                
+                        <strong><label for="Phone Number">Phone Number:</label></strong><br>
+                        <input type="tel" placeholder="000 000 0000" class="textfields" maxlength="10"><br>
+                </div>
+
+                <div class="address">
+                    <strong><label for="address">Address:</label></strong><br>
+                    <input type="text" class="textfields" placeholder="Builfing No." required>
+                    <input type="text" class="textfields" placeholder="Building Name" required>
+                    <input type="text" class="textfields" placeholder="Street Address" required>
+                    <input type="text" class="textfields" placeholder="City" required>
+                    <input type="text" class="textfields" placeholder="State" required>
+                    <input type="text" class="textfields" placeholder="Postal Zip Code" required>
+                </div>
+                <div class="gender">
+                    <strong><label for="gender">Gender:</label></strong>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male" class="custom-radio">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label><br>
+                </div>
+
+                <div class="position">
+                    <strong><label for="Position">Position Applying For:</label></strong><br>
+                    <select name="position">
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="Marketing manager">Marketing Manager</option>
+                        <option value="Mern">Mern-Stack Developer</option>
+                        <option value="Web design">Web Designer</option>
+                        <option value="accountant">Accountant</option>
+                    </select><br>
+                </div>
+
+                <div class="skill">
+                    <strong><label for="skills">Skills:</label></strong>
+                    <input type="checkbox" name="html">
+                    <label for="Html">HTML</label>
+                    <input type="checkbox" name="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="php">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" name="javascript">
+                    <label for="javascript">Javascript</label><br>
+                </div>
+
+
+                <div class="upload">
+                    <strong><label for="resume">Upload Resume:</label></strong>
+                    <input type="file" name="file"><br>
+                </div>
+
+                <div class="experience">
+                    <strong><label for="level">Experience Level:</label></strong>
+                    <input type="radio" name="level">
+                    <label for="fresher">Fresher</label>
+                    <input type="radio" name="level">
+                    <label for="1-Year">1-2 Year</label>
+                    <input type="radio" name="level">
+                    <label for="3-Year">3+ Year</label><br>
+                </div>
+
+                <button class="button">Apply Now</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>

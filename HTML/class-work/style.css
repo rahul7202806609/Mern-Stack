@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li, table, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+
+nav a:hover {
+  border-radius: 3px;
+  color:#ffcc00;
+  border: 1px solid white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1{
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+h1:hover{
+    color: white;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+figure {
+  margin: 10px 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #666;
+}
+
+form {
+  margin-top: 15px;
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+  font-weight: bold;
+}
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+aside {
+  background-color: #eef;
+  padding: 10px;
+  border-left: 4px solid #88f;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+iframe, canvas, video, audio {
+  display: block;
+  margin: 15px 0;
+  max-width: 100%;
+}

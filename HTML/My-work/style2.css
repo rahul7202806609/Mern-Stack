@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #c7daf4;
+  color: #333;
+  padding: 20px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.textfields, textarea, select {
+  width: 42%;                                                           
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #6f6c6c;
+  border-radius: 4px;
+}
+.gender, .upload, .experience, .skill{
+    margin-bottom: 8px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
