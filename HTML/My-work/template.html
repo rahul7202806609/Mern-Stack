@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="template.css">
+    <title>Delicious Bites - Restaurant</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" aria-label="Site logo">Delicious Bites</div>
+            <div class="nav-links" role="navigation" aria-label="Main navigation">
+                <button type="button" class="nav-button active" data-target="home" aria-current="page">Home</button>
+                <button type="button" class="nav-button" data-target="menu">Menu</button>
+                <button type="button" class="nav-button" data-target="about">About Us</button>
+                <button type="button" class="nav-button" data-target="reservations">Reservations</button>
+                <button type="button" class="nav-button" data-target="contact">Contact</button>
+                <button type="button" class="nav-button" data-target="gallery">Gallery</button>
+                <button type="button" class="nav-button" data-target="sign-up">Sign-Up</button>
+                <button type="button" class="nav-button" data-target="login">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active" tabindex="0" aria-label="Home section">
+            <h1>Delicious Bites</h1>
+            <p class="tagline">At Our Restaurent, we bring you the rich flavors of authentic homemade cuisine <br>
+                crafted with love and
+                tradition. </p>
+            <button id="reserve-cta" aria-describedby="reserve-description">Reserve a Table</button>
+            <p id="reserve-description" hidden>Click to open the reservations section</p>
+
+            <div id="home-subsections">
+
+                <!-- Featured Specials -->
+                <section id="featured-specials" class="active" aria-label="Featured specials" tabindex="0">
+                    <h2>Featured Specials</h2>
+                    <div class="specials-grid">
+                        <article class="special-card" tabindex="0">
+                            <img class="special-image"
+                                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+                                alt="Grilled ribeye steak with garlic mashed potatoes" />
+                            <div class="special-content">
+                                <h3 class="special-title">Juicy Ribeye Steak</h3>
+                                <p class="special-desc">Tender ribeye grilled to perfection, served with creamy garlic
+                                    mashed potatoes and seasonal veggies.</p>
+                            </div>
+                        </article>
+                        <article class="special-card" tabindex="0">
+                            <img class="special-image"
+                                src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80"
+                                alt="Italian classic bruschetta appetizer" />
+                            <div class="special-content">
+                                <h3 class="special-title">Classic Bruschetta</h3>
+                                <p class="special-desc">Grilled artisan bread topped with fresh tomatoes, basil, garlic
+                                    and a drizzle of olive oil.</p>
+                            </div>
+                        </article>
+                        <article class="special-card" tabindex="0">
+                            <img class="special-image"
+                                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                                alt="Dessert tiramisu with cocoa dust" />
+                            <div class="special-content">
+                                <h3 class="special-title">Tiramisu Delight</h3>
+                                <p class="special-desc">Luscious layers of coffee-soaked ladyfingers and mascarpone
+                                    cream topped with cocoa powder.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us -->
+                <section id="why-choose-us" class="active" aria-label="Why choose us" tabindex="0">
+                    <h2>Why Choose Us?</h2>
+                    <div class="why-grid" role="list">
+                        <div class="why-item" tabindex="0" role="listitem">
+                            <div class="why-icon" aria-hidden="true">🍽️</div>
+                            Finest Ingredients – Only fresh, locally sourced produce and quality meats.
+                        </div>
+                        <div class="why-item" tabindex="0" role="listitem">
+                            <div class="why-icon" aria-hidden="true">👨‍🍳</div>
+                            Experienced Chefs – Passionate culinary artists creating delicious dishes.
+                        </div>
+                        <div class="why-item" tabindex="0" role="listitem">
+                            <div class="why-icon" aria-hidden="true">🏡</div>
+                            Cozy Ambiance – Relax and enjoy a comfortable atmosphere perfect for any occasion.
+                        </div>
+                        <div class="why-item" tabindex="0" role="listitem">
+                            <div class="why-icon" aria-hidden="true">🌟</div>
+                            Top Service – Friendly and attentive staff ensuring an excellent dining experience.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Ambiance -->
+                <section id="our-ambiance" class="active" aria-label="Our ambiance" tabindex="0">
+                    <h2>Our Ambiance</h2>
+                    <div class="ambiance-grid">
+                        <img class="ambiance-img"
+                            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                            alt="Restaurant interior with warm lighting" tabindex="0" />
+                        <img class="ambiance-img"
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                            alt="Table decorated for dinner" tabindex="0" />
+                        <img class="ambiance-img"
+                            src="https://images.unsplash.com/photo-1523906630133-f6934a2b1d4d?auto=format&fit=crop&w=600&q=80"
+                            alt="Waitstaff serving drinks" tabindex="0" />
+                    </div>
+                </section>
+
+                <!-- Chef's Recommendation -->
+                <section id="chef-recommendation" class="active" aria-label="Chef’s recommendation" tabindex="0">
+                    <h2>Chef’s Recommendation</h2>
+                    <div class="recommendation-item">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                            alt="Dish of grilled salmon" tabindex="0" />
+                        <div class="rec-text">
+                            Try our signature <strong>Grilled Salmon</strong> fresh from the sea, seasoned with a light
+                            lemon butter sauce and served with seasonal vegetables. A top pick by Chef Maria Lopez!
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Customer Testimonials -->
+                <section id="testimonials" class="active" aria-label="Customer testimonials" tabindex="0">
+                    <h2>What Our Customers Say</h2>
+                    <div class="testimonial-cards">
+                        <blockquote class="testimonial-card" tabindex="0">
+                            “Absolutely sensational food and a very welcoming atmosphere. The ribeye steak was cooked to
+                            perfection!”
+                            <footer class="testimonial-author">– Sarah J.</footer>
+                        </blockquote>
+                        <blockquote class="testimonial-card" tabindex="0">
+                            “Delicious Bites has become my go-to spot. Always fresh ingredients and fantastic service.
+                            Highly recommend!
+                        </blockquote>
+                        <blockquote class="testimonial-card" tabindex="0">
+                            “The tiramisu here is to die for! Cozy spot with great ambiance and friendly staff. Can't
+                            wait to come back.”<footer class="testimonial-author">– Mark T.</footer>
+                        </blockquote>
+                    </div>
+                </section>
+
+                <!-- Bottom call to action -->
+                <div class="bottom-cta">
+                    <button id="reserve-cta-bottom" aria-describedby="reserve-description-bottom">Reserve Your Table
+                        Now</button>
+                    <p id="reserve-description-bottom" hidden>Click to open the reservations section</p>
+                </div>
+
+            </div><!-- /home-subsections -->
+        </section>
+
+        <section id="menu" tabindex="0" aria-label="Menu section">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=100&q=80"
+                        alt="Bruschetta appetizer" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Bruschetta</span>
+                            <span class="menu-item-desc">Grilled bread with tomatoes, garlic &amp; basil</span>
+                        </div>
+                        <div class="menu-item-price">$8</div>
+                    </div>
+                </div>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=100&q=80"
+                        alt="Stuffed mushrooms" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Stuffed Mushrooms</span>
+                            <span class="menu-item-desc">Button mushrooms filled with cheese and herbs</span>
+                        </div>
+                        <div class="menu-item-price">$9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=100&q=80"
+                        alt="Grilled salmon main dish" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Grilled Salmon</span>
+                            <span class="menu-item-desc">Fresh salmon with lemon butter sauce</span>
+                        </div>
+                        <div class="menu-item-price">$22</div>
+                    </div>
+                </div>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=100&q=80"
+                        alt="Ribeye steak main dish" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Ribeye Steak</span>
+                            <span class="menu-item-desc">Juicy ribeye with garlic mashed potatoes</span>
+                        </div>
+                        <div class="menu-item-price">$28</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=100&q=80"
+                        alt="Tiramisu dessert" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Tiramisu</span>
+                            <span class="menu-item-desc">Italian coffee-flavored layered dessert</span>
+                        </div>
+                        <div class="menu-item-price">$7</div>
+                    </div>
+                </div>
+                <div class="menu-item" tabindex="0" role="listitem">
+                    <img class="menu-item-image"
+                        src="https://images.unsplash.com/photo-1505253210343-fad22b08a0e1?auto=format&fit=crop&w=100&q=80"
+                        alt="Cheesecake dessert" />
+                    <div class="menu-item-details">
+                        <div>
+                            <span class="menu-item-name">Cheesecake</span>
+                            <span class="menu-item-desc">Classic creamy cheesecake with berry sauce</span>
+                        </div>
+                        <div class="menu-item-price">$7</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" tabindex="0" aria-label="About us section">
+            <h2>About Us</h2>
+            <p>At Delicious Bites, we believe food is an experience. Founded in 2010, our mission is to serve
+                high-quality dishes crafted from fresh ingredients in a cozy and welcoming atmosphere.</p>
+            <p>Our chefs are passionate about culinary art and bring their expertise to every plate served.</p>
+            <div class="team">
+                <h3>Meet Our Team</h3>
+                <div class="team-member" tabindex="0">
+                    <h4>Chef Maria Lopez</h4>
+                    <p>Expert in Mediterranean cuisine with over 15 years of experience.</p>
+                </div>
+                <div class="team-member" tabindex="0">
+                    <h4>Manager John Smith</h4>
+                    <p>Ensuring guests have a wonderful dining experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservations" tabindex="0" aria-label="Reservations section">
+            <h2>Reservations</h2>
+            <form id="reservation-form" aria-label="Reservation form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required
+                    autocomplete="email" />
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required autocomplete="tel" />
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required />
+
+                <label for="guests">Number of guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="reservation-message" aria-live="polite"></div>
+        </section>
+
+        <section id="contact" tabindex="0" aria-label="Contact section">
+            <h2>Contact Us</h2>
+            <div id="contact-info">
+                <div><strong>Address:</strong> 123 Foodie Lane, Flavor Town, USA</div>
+                <div><strong>Phone:</strong> <a href="tel:+1234567890" aria-label="Call phone number">(123) 456-7890</a>
+                </div>
+                <div><strong>Email:</strong> <a href="mailto:info@deliciousbites.com"
+                        aria-label="Email us">info@deliciousbites.com</a></div>
+                <div><strong>Social:</strong>
+                    <a href="#" aria-label="Facebook page">Facebook</a> |
+                    <a href="#" aria-label="Instagram page">Instagram</a> |
+                    <a href="#" aria-label="Twitter page">Twitter</a>
+                </div>
+            </div>
+            <iframe id="contact-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.145091308204!2d-122.42067128468155!3d37.779281279758594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c11a0248b%3A0xa15fd72be411ff61!2s123%20Foodie%20Ln%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sus!4v1685610000000!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Google Maps location"></iframe>
+        </section>
+
+        <section id="gallery" tabindex="0" aria-label="Gallery section">
+            <h2>Gallery</h2>u
+            <div class="gallery-grid" role="list">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80"
+                    alt="Delicious pasta dish" role="listitem" tabindex="0" />
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
+                    alt="Close up of grilled steak dinner" role="listitem" tabindex="0" />
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                    alt="Restaurant interior with ambient lighting" role="listitem" tabindex="0" />
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                    alt="Dessert plating with berries" role="listitem" tabindex="0" />
+            </div>
+        </section>
+        <section id="sign-up" tabindex="0" aria-label="Sign-up section">
+            <main>
+                <h2>Sign-Up Form</h2>
+                <form action="" method="post">
+                    <label>User-Name:</label><input type="text" name="fname" class="textfields"
+                        placeholder="Full Name"><br><br>
+                    <label>E-Mail: </label><input type="email" name="email" class="textfields"
+                        placeholder="Email"><br><br>
+                    <label>Password: </label><input type="password" name="password" class="textfields"
+                        placeholder="Password"><br><br>
+                    <label>Confirm Password: </label><input type="password" name="password" class="textfields"
+                        placeholder="Confirm Password"><br><br>
+                    <button class="button">Sign-Up</button>
+                    <h3>Already Have An Account <a href="">Login Now</a></h3>
+                </form>
+            </main>
+        </section>
+        <section id="login" tabindex="0" aria-label="Login section">
+            <main>
+                <h2>Login Form</h2>
+                <form action="" method="post">
+                    <label>User-Name:</label> <input type="text" name="fname" class="textfields"
+                        placeholder="Full Name"><br><br>
+                    <label>E-Mail: </label><input type="email" name="email" class="textfields"
+                        placeholder="Email"><br><br>
+                    <label>Password: </label><input type="password" name="password" class="textfields"
+                        placeholder="Password"><br><br>
+                    <button class="button">Login</button><br><br>
+                    <h3>Don't Have Any Account <a href="">Sign-Up</a></h3>
+                </form>
+            </main>
+        </section>
+    </main>
+
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">&#9650;</button>
+
+    <footer>
+        &copy; 2024 Delicious Bites. All rights reserved.
+    </footer>
+    <script src="template.js"></script>
+</body>
+
+</html>
