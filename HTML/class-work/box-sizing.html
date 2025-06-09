@@ -1,0 +1,67 @@
+
+
+<!--
+
+
+Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+
+.box{
+	box-sizing: border-box;
+}
+
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+.box1{
+		width:25%;
+		height:auto;
+		background-color:orange;
+		float:left;
+        padding: 10px;
+        border: 20px solid;
+		
+	}
+.box2{
+	width:25%;
+	height:auto;
+	background-color:red;
+	float:left;
+    padding: 10px;
+    border: 20px solid;
+	}
+</style>
+</head>
+<body>
+	
+	<div class="box1">
+		<h1>Hello 1</h1>
+	</div>
+	<div class="box2">
+		<h1>Hello 1</h1>
+	</div>
+	<div class="box1">
+		<h1>Hello 1</h1>
+	</div>
+	<div class="box2">
+		<h1>Hello 1</h1>
+	</div>
+		
+	
+</body>
+</html>
