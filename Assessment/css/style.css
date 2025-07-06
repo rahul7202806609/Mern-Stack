@@ -265,6 +265,7 @@ nav a {
   color: white;
   position: relative;
   overflow: hidden;
+  transition: 0.3s ease-in;
 }
 
 .card img {
@@ -272,6 +273,16 @@ nav a {
   height: 340px;
   object-fit: cover;
   display: block;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 5px black);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .card-title {
@@ -326,6 +337,10 @@ nav a {
   border-bottom: 2px red solid;
 }
 
+.product-card img:hover{
+  transform: scaleX(-1);
+}
+
 .product-card p{
   color: red;
   font-weight: 600;
@@ -378,7 +393,70 @@ nav a {
 }
 
 .image-template img{
-  width: 800px;
+  width: 750px;
+}
+
+.new-arrival{
+  height: 400px;
+  background-color: black;
+  margin: 40px 0 40px 0;
+}
+
+.text-arrival{
+  margin-top: 60px;
+  margin-left: 80px;
+}
+
+.text-arrival span{
+  font-size: 60px;
+  font-weight: 800;
+  padding: 3px;
+  background-color: rgb(255, 25, 0);
+}
+
+.text-arrival h2{
+  font-size: 90px;
+  color: white;
+  margin-top: 10px;
+}
+
+.explore-btn {
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #646060;
+}
+
+.arrival-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.arrival-image img  {
+  height: 300px;
+  margin-left: 40px;
+  box-shadow: 2px 2px 20px white;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.arrival-image img:hover{
+  transform: scale(1.1);
 }
 
 
