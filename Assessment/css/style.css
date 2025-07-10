@@ -257,6 +257,8 @@ nav a {
   gap: 50px;
   padding: 40px 20px;
   flex-wrap: wrap;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .card {
@@ -464,7 +466,7 @@ nav a {
   width: 100%;
 }
 
-.association{
+.association {
   height: 350px;
   background-color: white;
 }
@@ -486,20 +488,20 @@ nav a {
   padding: 30px;
 }
 
-.association-image img{
+.association-image img {
   filter: drop-shadow(1px 1px 3px black);
   transition: 0.3s ease-in-out;
 }
 
-.association-image img:hover{
+.association-image img:hover {
   transform: scale(1.1);
 }
 
-.connect{
+.connect {
   background-color: white;
 }
 
-.connect-text{
+.connect-text {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -508,24 +510,25 @@ nav a {
   font-weight: 500;
 }
 
-.fa-instagram{
+.fa-instagram {
   font-size: 50px;
   padding: 10px;
   font-weight: bold;
 }
 
-.connect-videos{
+.connect-videos {
   display: flex;
   justify-content: center;
   gap: 30px;
 
-  
+
 }
-.videos{
+
+.videos {
   margin-bottom: 50px;
 }
 
-.videos video{
+.videos video {
   height: 500px;
   border-radius: 10px;
   filter: drop-shadow(2px 2px 5px black);
@@ -631,4 +634,43 @@ nav a {
 
 .logo img {
   width: 80px;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
